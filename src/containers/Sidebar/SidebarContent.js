@@ -73,7 +73,15 @@ class SidebarContent extends Component {
               {/* Мои товары */}
               <Menu.Item key="my-products">
                 <Link to="/my-products">
+                  <i className="icon icon-shopping-cart " />
                   <IntlMessages id="sidebar.eCommerce.productList" />
+                </Link>
+              </Menu.Item>
+              {/* Мои заказы */}
+              <Menu.Item key="my-orders">
+                <Link to="/my-orders">
+                  <i className="icon icon-editor" />
+                  <IntlMessages id="sidebar.editors.CKEditor" />
                 </Link>
               </Menu.Item>
             </Menu>
