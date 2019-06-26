@@ -283,7 +283,7 @@
   "sidebar.dashboard.listing": "Listing",
   "sidebar.dashboard.crypto": "Crypto",
   "sidebar.map": "Map",
-  "sidebar.algolia": "All products",
+  "sidebar.algolia": "Все товары",
   "sidebar.components.rechart": "ReChart",
   "sidebar.components.amchart": "AmChart",
   "sidebar.google.map": "Google Map",
@@ -302,6 +302,6 @@
   "sidebar.map.multiple.areas": "Multiple Areas",
   "sidebar.map.weather": "Weather map",
   "sidebar.extensions.shuffle": "Shuffle",
-  "sidebar.extensions.profile": "My Cabinet",
+  "sidebar.extensions.profile": "Мой Кабинет",
   "sidebar.social": "Social Apps"
 }

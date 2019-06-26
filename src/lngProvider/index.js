@@ -4,9 +4,11 @@ import arLang from "./entries/ar_SA";
 import itLang from "./entries/it_IT";
 import esLang from "./entries/es_ES";
 import frLang from "./entries/fr_FR";
-import {addLocaleData} from "react-intl";
+import ruLang from "./entries/ru-RU";
+import { addLocaleData } from "react-intl";
 
 const AppLocale = {
+  ru: ruLang,
   en: enLang,
   zh: zhLang,
   ar: arLang,
@@ -14,6 +16,7 @@ const AppLocale = {
   es: esLang,
   fr: frLang
 };
+addLocaleData(AppLocale.ru.data);
 addLocaleData(AppLocale.en.data);
 addLocaleData(AppLocale.zh.data);
 addLocaleData(AppLocale.ar.data);

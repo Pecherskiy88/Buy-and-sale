@@ -1,40 +1,45 @@
 const languageData = [
   {
-    languageId: 'english',
-    locale: 'en',
-    name: 'English',
-    icon: 'us'
+    languageId: "russian",
+    locale: "ru",
+    name: "Russian",
+    icon: "ru"
   },
   {
-    languageId: 'chinese',
-    locale: 'zh',
-    name: 'Chinese',
-    icon: 'cn'
+    languageId: "english",
+    locale: "en",
+    name: "English",
+    icon: "us"
   },
   {
-    languageId: 'spanish',
-    locale: 'es',
-    name: 'Spanish',
-    icon: 'es'
+    languageId: "chinese",
+    locale: "zh",
+    name: "Chinese",
+    icon: "cn"
   },
   {
-    languageId: 'french',
-    locale: 'fr',
-    name: 'French',
-    icon: 'fr'
+    languageId: "spanish",
+    locale: "es",
+    name: "Spanish",
+    icon: "es"
   },
   {
-    languageId: 'italian',
-    locale: 'it',
-    name: 'Italian',
-    icon: 'it'
+    languageId: "french",
+    locale: "fr",
+    name: "French",
+    icon: "fr"
   },
   {
-    languageId: 'saudi-arabia',
-    locale: 'ar',
-    name: 'Arabic',
-    icon: 'sa'
+    languageId: "italian",
+    locale: "it",
+    name: "Italian",
+    icon: "it"
+  },
+  {
+    languageId: "saudi-arabia",
+    locale: "ar",
+    name: "Arabic",
+    icon: "sa"
   }
-
 ];
 export default languageData;

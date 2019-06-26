@@ -56,16 +56,24 @@ class SidebarContent extends Component {
               theme={themeType === THEME_TYPE_LITE ? "lite" : "dark"}
               mode="inline"
             >
-              {/* <Menu.Item key="sample">
-                <Link to="/sample">
-                  <i className="icon icon-widgets" />
-                  <IntlMessages id="sidebar.samplePage" />
-                </Link>
-              </Menu.Item> */}
+              {/* Мой кабинет */}
               <Menu.Item key="profile">
                 <Link to="/profile">
                   <i className="icon icon-profile2" />
                   <IntlMessages id="sidebar.extensions.profile" />
+                </Link>
+              </Menu.Item>
+              {/* Все товары */}
+              <Menu.Item key="all-products">
+                <Link to="/all-products">
+                  <i className="icon icon-shopping-cart " />
+                  <IntlMessages id="sidebar.algolia" />
+                </Link>
+              </Menu.Item>
+              {/* Мои товары */}
+              <Menu.Item key="my-products">
+                <Link to="/my-products">
+                  <IntlMessages id="sidebar.eCommerce.productList" />
                 </Link>
               </Menu.Item>
             </Menu>

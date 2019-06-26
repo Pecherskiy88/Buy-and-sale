@@ -85,7 +85,7 @@ class App extends Component {
       document.body.classList.add("dark-theme");
     }
     if (location.pathname === "/") {
-      return <Redirect to={"/sample"} />;
+      return <Redirect to={"/profile"} />;
     }
 
     this.setLayoutType(layoutType);
@@ -93,7 +93,6 @@ class App extends Component {
     this.setNavStyle(navStyle);
 
     const currentAppLocale = AppLocale[locale.locale];
-    console.log("match: ", match);
     return (
       <LocaleProvider locale={currentAppLocale.antd}>
         <IntlProvider
