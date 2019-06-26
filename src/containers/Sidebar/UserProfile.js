@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import { Avatar, Popover } from "antd";
-import { userSignOut } from "appRedux/actions/Auth";
 
 class UserProfile extends Component {
   render() {
@@ -9,7 +7,6 @@ class UserProfile extends Component {
       <ul className="gx-user-popover">
         <li>My Account</li>
         <li>Connections</li>
-        <li onClick={() => this.props.userSignOut()}>Logout</li>
       </ul>
     );
 
@@ -21,10 +18,9 @@ class UserProfile extends Component {
           trigger="click"
         >
           <Avatar
-            // src="https://via.placeholder.com/150x150"
-            src="https://images.pexels.com/photos/87611/sun-fireball-solar-flare-sunlight-87611.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            src="http://pics.wikireality.ru/upload/7/76/VXiffKrqdwo.jpg"
             className="gx-size-40 gx-pointer gx-mr-3"
-            alt="avatar"
+            alt=""
           />
           <span className="gx-avatar-name">
             Pecherskiy
@@ -36,7 +32,4 @@ class UserProfile extends Component {
   }
 }
 
-export default connect(
-  null,
-  { userSignOut }
-)(UserProfile);
+export default UserProfile;

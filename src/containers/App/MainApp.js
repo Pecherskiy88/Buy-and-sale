@@ -11,7 +11,6 @@ import BelowHeader from "../Topbar/BelowHeader/index";
 import Topbar from "../Topbar/index";
 import {footerText} from "util/config";
 import App from "routes/index";
-import Customizer from "containers/Customizer";
 import {connect} from "react-redux";
 import {
   NAV_STYLE_ABOVE_HEADER,
@@ -44,8 +43,8 @@ export class MainApp extends Component {
         return "gx-container-wrap";
       case NAV_STYLE_ABOVE_HEADER:
         return "gx-container-wrap";
-      default:
-        return '';
+      default :
+        return ""
     }
   };
   getNavStyles = (navStyle) => {
@@ -112,7 +111,6 @@ export class MainApp extends Component {
             </Footer>
           </Content>
         </Layout>
-        <Customizer/>
       </Layout>
     )
   }

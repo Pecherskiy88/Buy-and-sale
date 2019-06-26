@@ -4,13 +4,12 @@ import {routerMiddleware} from "react-router-redux";
 import createHistory from "history/createBrowserHistory";
 import createSagaMiddleware from "redux-saga";
 import rootSaga from "../sagas/index";
-import thunk from 'redux-thunk';
 
 const history = createHistory();
 const routeMiddleware = routerMiddleware(history);
 const sagaMiddleware = createSagaMiddleware();
 
-const middlewares = [thunk,sagaMiddleware, routeMiddleware];
+const middlewares = [sagaMiddleware, routeMiddleware];
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export default function configureStore(initialState) {
